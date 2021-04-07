@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Style/Item.css'
+import myImage from './Images/s20Ultra.png'
+
 const Item = ({item, children}) => (
 <div className="Item">
     <div className="Item-left">
-        <div className="Item-image"/>
+        <div >
+        <img className="Item-image" src={myImage} alt="Product" />
+            </div>
         <div className="Item-title">
             {item.name}
         </div>
